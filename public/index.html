@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- 문서의 문자 인코딩을 UTF-8로 설정 -->
     <meta charset="utf-8" />
+    
+    <!-- 브라우저 탭에 표시될 아이콘 설정 -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    
+    <!-- 모바일 기기에서 화면 크기를 제대로 조정하기 위한 설정 -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- 브라우저의 주소 표시줄 색상을 설정 -->
     <meta name="theme-color" content="#000000" />
+    
+    <!-- 웹사이트의 설명을 제공, 검색 엔진 최적화(SEO)에 도움 -->
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
+    
+    <!-- 애플 터치 아이콘을 설정, iOS에서 사용 -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    
     <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+      manifest.json은 웹 앱이 사용자의 모바일 기기나 데스크탑에 설치될 때
+      사용되는 메타데이터를 제공함. 자세한 내용은 아래 링크 참조:
+      https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
     <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+      위의 태그들에서 %PUBLIC_URL% 사용에 주의.
+      빌드 과정에서 %PUBLIC_URL%은 `public` 폴더의 URL로 대체됨.
+      오직 `public` 폴더 내부의 파일들만 HTML에서 참조 가능.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+      "/favicon.ico" 대신 "%PUBLIC_URL%/favicon.ico"를 사용하는 이유는
+      클라이언트 사이드 라우팅과 비루트 공용 URL에서도 올바르게 동작하기 때문임.
+      비루트 공용 URL을 구성하는 방법은 `npm run build`를 실행해 참고할 수 있음.
     -->
+    
+    <!-- 웹페이지의 제목 설정 -->
     <title>React App</title>
   </head>
   <body>
+    <!-- 자바스크립트를 활성화하지 않으면 앱이 작동하지 않음을 알림 -->
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    
     <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+      React 애플리케이션의 루트 요소. ReactDOM이 이 요소에
+      컴포넌트를 렌더링함. React 앱이 이 div에 마운트됨.
+    -->
+    <div id="root"></div>
+    
+    <!--
+      이 HTML 파일은 템플릿 역할을 함.
+      브라우저에서 직접 열면 빈 페이지가 나타날 것임.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      웹폰트, 메타 태그 또는 분석 도구를 이 파일에 추가할 수 있음.
+      빌드 과정에서 번들된 스크립트가 <body> 태그에 삽입됨.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
+      개발을 시작하려면 `npm start` 또는 `yarn start` 명령어를 실행.
+      프로덕션 번들을 만들려면 `npm run build` 또는 `yarn build` 명령어를 사용.
     -->
   </body>
 </html>
