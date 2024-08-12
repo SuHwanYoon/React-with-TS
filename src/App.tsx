@@ -1,10 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import GoalList from "./components/GoalList/GoalList";
+import NewGoal from "./components/NewGoal/NewGoal";
+
 
 function App() {
+  const courseGoals = [
+    { id: "코스목표1", text: "Finish the Course" },
+    { id: "코스목표2", text: "Learn all about the Course Main Topic" },
+    { id: "코스목표3", text: "Help other students in the Course Q&A" },
+  ];
+
   return (
-      <h1 title='마우스를 올리면 텍스트가 나타납니다'>이것은 <span>타입스크립트</span> 리액트 앱입니다.</h1>//React.createElement
+    <div className="course-goals">
+      <h2>Course Goals</h2>
+      <NewGoal />
+      {/* 속성을 사용하여 해당 컴포넌트에 데이터를 전달 */}
+      <GoalList goals={courseGoals}/>
+    </div>
   );
 }
 
