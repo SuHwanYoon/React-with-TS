@@ -15,6 +15,7 @@ interface GoalListProps {
 const GoalList: React.FC<GoalListProps> = (props) => {
   return (
     <ul className="goal-list">
+      {/* props.건네받은속성이름(goals).map()으로 건네받은 리스트 순회 렌더링 */}
       {props.goals.map((goal) => {
         return <li key={goal.id}>{goal.text}</li>;// 각 목표를 리스트로 렌더링
       })}
